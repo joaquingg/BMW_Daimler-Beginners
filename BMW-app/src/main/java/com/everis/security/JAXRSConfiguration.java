@@ -12,7 +12,7 @@ import javax.ws.rs.core.Application;
  *
  * @author airhacks.com
  */
-@ApplicationPath("api/v1")
+@ApplicationPath("BMW-api/v1")
 public class JAXRSConfiguration extends Application {
     @Override
     public Map<String, Object> getProperties() {
