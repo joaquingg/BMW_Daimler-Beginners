@@ -1,2 +1,7 @@
 C:\Users\jgalvego\eclipse-workspace\BMW\BMW-app\src\main\java\com\everis\security\JAXRSConfiguration.java
+C:\Users\jgalvego\eclipse-workspace\BMW\BMW-app\src\main\java\com\everis\security\car\exceptions\CarNotFoundException.java
+C:\Users\jgalvego\eclipse-workspace\BMW\BMW-app\src\main\java\com\everis\security\car\exceptions\CarNotFoundExceptionMapper.java
+C:\Users\jgalvego\eclipse-workspace\BMW\BMW-app\src\main\java\com\everis\security\car\exceptions\ErrorMessage.java
+C:\Users\jgalvego\eclipse-workspace\BMW\BMW-app\src\main\java\com\everis\security\car\boundary\CarResource.java
 C:\Users\jgalvego\eclipse-workspace\BMW\BMW-app\src\main\java\com\everis\security\car\entity\Car.java
+C:\Users\jgalvego\eclipse-workspace\BMW\BMW-app\src\main\java\com\everis\security\car\boundary\CarService.java

@@ -1,0 +1,4 @@
+com\everis\security\car\entity\Car.class
+com\everis\security\car\boundary\CarResource.class
+com\everis\security\car\boundary\CarService.class
+com\everis\security\JAXRSConfiguration.class
