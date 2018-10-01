@@ -2,6 +2,7 @@ package com.everis.security.car.entity;
 
 import java.math.BigInteger;
 import java.sql.Timestamp;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +10,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 @Table(name="CAR")
@@ -18,25 +21,28 @@ public class Car {
 	//-- ATRIBUTOS --
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private BigInteger id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	@Column(unique=false, nullable = false)
 	private String brand;
 	@Column(unique=false, nullable=false)
-	private Timestamp registro;
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date registro;
 	@Column(unique=false,nullable=false)
 	private String country;
 	@Column(unique=false,nullable=false)
-	private Timestamp creacion;
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date creacion;
 	@Column(unique=false,nullable=false)
-	private Timestamp last_update;
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date last_update;
 
 	
 	//-- MÉTODOS --
-	public BigInteger getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(BigInteger id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getBrand() {
@@ -45,10 +51,10 @@ public class Car {
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
-	public Timestamp getRegistro() {
+	public Date getRegistro() {
 		return registro;
 	}
-	public void setRegistro(Timestamp registro) {
+	public void setRegistro(Date registro) {
 		this.registro = registro;
 	}
 	public String getCountry() {
@@ -57,17 +63,25 @@ public class Car {
 	public void setCountry(String country) {
 		this.country = country;
 	}
-	public Timestamp getCreacion() {
+	public Date getCreacion() {
 		return creacion;
 	}
-	public void setCreacion(Timestamp creacion) {
+	public void setCreacion(Date creacion) {
 		this.creacion = creacion;
 	}
-	public Timestamp getLast_update() {
+	public Date getLast_update() {
 		return last_update;
 	}
-	public void setLast_update(Timestamp last_update) {
+	public void setLast_update(Date last_update) {
 		this.last_update = last_update;
+	}
+	
+	public void update(Car car) {
+		this.brand = car.getBrand();
+		this.registro = car.getRegistro();
+		this.country = car.getCountry();
+		this.creacion = car.getCreacion();
+		this.last_update = car.getLast_update();
 	}
 
 	
