@@ -1,4 +1,8 @@
+com\everis\security\car\converter\LocalDateTimeAttributeConverter.class
+com\everis\security\car\exceptions\CarNotFoundExceptionMapper.class
 com\everis\security\car\entity\Car.class
 com\everis\security\car\boundary\CarResource.class
 com\everis\security\car\boundary\CarService.class
+com\everis\security\car\exceptions\CarNotFoundException.class
 com\everis\security\JAXRSConfiguration.class
+com\everis\security\car\exceptions\ErrorMessage.class

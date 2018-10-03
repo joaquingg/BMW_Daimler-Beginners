@@ -7,10 +7,10 @@ import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 /**
- * Configures a JAX-RS endpoint. Delete this class, if you are not exposing
- * JAX-RS resources in your application.
+ * Configuración del endpoint JAX-RS. Este es el punto de partida de toda
+ * aplicación JAX-RS.
  *
- * @author airhacks.com
+ * @author Joaquín Gálvez Gómez
  */
 @ApplicationPath("BMW-api/v1")
 public class JAXRSConfiguration extends Application {
